@@ -17,8 +17,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 @import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -73,19 +73,13 @@ h2 {
     h2 {
       font-size: 2.1rem; } }
 
-section {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
-
-#home {
-  background-image: url("../../img/landing-bg.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fafeff; }
+span {
+  color: red;
+  font-size: 8rem;
+  font-family: 'Pacifico', cursive; }
+  @media only screen and (max-width: 37.5em) {
+    span {
+      font-size: 4rem; } }
 
 #sm-span {
   font-weight: 400;
@@ -103,10 +97,19 @@ section {
     #sm-span {
       font-size: 2.1rem; } }
 
-span {
-  color: red;
-  font-size: 8rem;
-  font-family: 'Pacifico', cursive; }
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+#home {
+  background-image: url("../../img/landing-bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fafeff; }
 
 /* Navigation */
 nav {
@@ -149,7 +152,7 @@ a {
 /* About Section */
 .about-container {
   display: flex;
-  padding: 2rem; }
+  padding: 12rem; }
   @media only screen and (max-width: 37.5em) {
     .about-container {
       display: flex;
