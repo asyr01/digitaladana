@@ -55,7 +55,7 @@ TypeWriter.prototype.type = function(){
 // Initialize on DOM Load
 document.addEventListener('DOMContentLoaded', init);
 
-// İnitialize Typer app
+// İnitialize Typer app Gett data from HTML.
 function init() {
     const txtElement = document.querySelector('.txt-type');
     const words = JSON.parse(txtElement.getAttribute('data-words'));

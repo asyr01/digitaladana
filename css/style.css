@@ -15,6 +15,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 html {
@@ -24,7 +26,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Handlee', cursive;
   height: 100vh;
   background-color: white;
   color: #424242;
@@ -39,6 +41,7 @@ h2 {
   border-right: 0.2rem solid #777; }
 
 h1 {
+  font-family: 'Handlee', cursive;
   font-size: 10rem;
   margin-bottom: 0; }
   @media only screen and (min-width: 112.5em) {
@@ -84,6 +87,22 @@ section {
   background-size: cover;
   color: #fafeff; }
 
+#sm-span {
+  font-weight: 400;
+  font-size: 7rem; }
+  @media only screen and (min-width: 112.5em) {
+    #sm-span {
+      font-size: 9rem; } }
+  @media only screen and (max-width: 75em) {
+    #sm-span {
+      font-size: 5rem; } }
+  @media only screen and (max-width: 75em) and (max-width: 56.25em) {
+    #sm-span {
+      font-size: 1.8rem; } }
+  @media only screen and (max-width: 75em) and (max-width: 37.5em) {
+    #sm-span {
+      font-size: 2.1rem; } }
+
 span {
   color: red;
   font-size: 8rem;
@@ -91,6 +110,7 @@ span {
 
 /* Navigation */
 nav {
+  font-family: 'Raleway', cursive;
   z-index: 10;
   position: fixed;
   font-size: 2.4rem;
