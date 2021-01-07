@@ -72,12 +72,12 @@ h2 {
     h2 {
       font-size: 2.1rem; } }
 
-span {
+.header-span {
   color: red;
   font-size: 8rem;
   font-family: 'Pacifico', cursive; }
   @media only screen and (max-width: 37.5em) {
-    span {
+    .header-span {
       font-size: 4rem; } }
 
 #sm-span {
