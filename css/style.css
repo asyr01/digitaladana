@@ -73,7 +73,7 @@ h2 {
       font-size: 2.1rem; } }
 
 .header-span {
-  color: red;
+  color: #ff5c5c;
   font-size: 8rem;
   font-family: 'Pacifico', cursive; }
   @media only screen and (max-width: 37.5em) {
