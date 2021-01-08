@@ -13,9 +13,11 @@ function darkMode() {
   toggleIcon.children[0].textContent = 'Dark Mode';
   toggleIcon.children[1].classList.remove('fa-sun');
   toggleIcon.children[1].classList.add('fa-moon');
+  console.log(toggleIcon.children);
 }
 
 
+function lightMode() {};
 
 // Swtich theme dynamically
 function switchTheme(event){
