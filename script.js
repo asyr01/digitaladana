@@ -13,7 +13,9 @@ function darkMode() {
   toggleIcon.children[0].textContent = 'Dark Mode';
   toggleIcon.children[1].classList.remove('fa-sun');
   toggleIcon.children[1].classList.add('fa-moon');
-  console.log(toggleIcon.children);
+  image1.src = 'img/undraw_feeling_proud_dark.svg'
+  image2.src = 'img/undraw_conceptual_idea_dark.svg'
+  image3.src = 'img/undraw_proud_coder_dark.svg'
 }
 
 
@@ -22,7 +24,8 @@ function lightMode() {};
 // Swtich theme dynamically
 function switchTheme(event){
     if(event.target.checked){
-      document.documentElement.setAttribute('data-theme', 'dark');
+        document.documentElement.setAttribute('data-theme', 'dark');
+        darkMode();
     } else {
         document.documentElement.setAttribute('data-theme', 'light');
         lightMode();
