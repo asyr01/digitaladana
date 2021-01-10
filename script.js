@@ -5,7 +5,7 @@ const image1 = document.getElementById('image1');
 const image2 = document.getElementById('image2');
 const image3 = document.getElementById('image3');
 const textBox = document.getElementById('text-box');
-const DARK_THEME  = 'dark';
+const DARK_THEME  = DARK_THEME;
 const LIGHT_THEME = 'light';
 
 
@@ -30,8 +30,8 @@ function toggleDarkLightMode(isDark) {
 // Swtich theme dynamically
 function switchTheme(event){
     if(event.target.checked){
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
+        document.documentElement.setAttribute('data-theme', DARK_THEME);
+        localStorage.setItem('theme', DARK_THEME);
         toggleDarkLightMode(true);
     } else {
         document.documentElement.setAttribute('data-theme', 'light');
@@ -49,7 +49,7 @@ const currentTheme = localStorage.getItem('theme');
 if(currentTheme) {
   document.documentElement.setAttribute('data-theme', currentTheme);
 
-  if(currentTheme === 'dark'){
+  if(currentTheme === DARK_THEME){
     toggleSwitch.checked = true;
     toggleDarkLightMode(true);
   }
