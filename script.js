@@ -5,6 +5,8 @@ const image1 = document.getElementById('image1');
 const image2 = document.getElementById('image2');
 const image3 = document.getElementById('image3');
 const textBox = document.getElementById('text-box');
+const DARK_THEME  = 'dark';
+const LIGHT_THEME = 'light';
 
 
 // Dark or Light Images
@@ -22,7 +24,7 @@ function toggleDarkLightMode(isDark) {
   toggleIcon.children[0].textContent = isDark ? 'Dark Mode' : 'Light Mode';
   isDark ? toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon') : 
    toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
-   isDark ? imageMode('dark') : imageMode('light')
+   isDark ? imageMode(DARK_THEME) : imageMode(DARK_THEME)
 }
 
 // Swtich theme dynamically
