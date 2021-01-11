@@ -46,16 +46,30 @@ section {
   flex-direction: column;
 }
 
+#home {
+  background-image: url('../img/landing-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
 h1 {
   font-family: Kaushan Script, sans-serif;
   font-size: 100px;
   margin-bottom: 0;
 }
 
+/* For the typing effect added by javascript */
+.writer {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 32px;
+  color: #f00;
+}
+
 h2 {
   font-size: 32px;
   font-weight: normal;
-  color: var(--on-background-alt);
+  color: #fff;
 }
 
 /* Navigation */
