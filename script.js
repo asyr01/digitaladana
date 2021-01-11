@@ -24,7 +24,7 @@ function toggleDarkLightMode(isDark) {
   toggleIcon.children[0].textContent = isDark ? 'Dark Mode' : 'Light Mode';
   isDark ? toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon') : 
    toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
-   isDark ? imageMode(DARK_THEME) : imageMode(DARK_THEME)
+   isDark ? imageMode(DARK_THEME) : imageMode(LIGHT_THEME)
 }
 
 // Swtich theme dynamically
@@ -34,8 +34,8 @@ function switchTheme(event){
         localStorage.setItem('theme', DARK_THEME);
         toggleDarkLightMode(true);
     } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light');
+        document.documentElement.setAttribute('data-theme', LIGHT_THEME);
+        localStorage.setItem('theme', LIGHT_THEME);
         toggleDarkLightMode(false);
     }
 }

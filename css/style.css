@@ -50,7 +50,7 @@ section {
   background-image: url('../img/landing-bg.jpg');
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 h1 {
@@ -69,7 +69,7 @@ h1 {
 h2 {
   font-size: 32px;
   font-weight: normal;
-  color: #fff;
+  color: #ccc;
 }
 
 /* Navigation */
