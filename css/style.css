@@ -21,6 +21,10 @@
   --background: #121212;
 }
 
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
