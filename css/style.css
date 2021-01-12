@@ -8,7 +8,8 @@
   --on-background: rgb(66, 66, 66);
   --on-background-alt: rgba(66, 66, 66, 0.7);
   --background: rgb(255, 255, 255);
-  --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+  --box-shadow: 0 5px 2rem 1px rgba(0, 0, 0, 0.5);
+  font-size: 62.5%; /*1rem = 10px*/
 }
 
 [data-theme='dark'] {
@@ -55,19 +56,19 @@ section {
 
 h1 {
   font-family: Kaushan Script, sans-serif;
-  font-size: 100px;
+  font-size: 10rem;
   margin-bottom: 0;
 }
 
 /* For the typing effect added by javascript */
 .writer {
   font-family: 'Kaushan Script', cursive;
-  font-size: 32px;
+  font-size: 3.2rem;
   color: #f00;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: normal;
   color: #ccc;
 }
@@ -77,15 +78,15 @@ nav {
   z-index: 10;
   position: fixed;
   font-family: Oswald, sans-serif;
-  font-size: 24px;
+  font-size: 2.4rem;
   letter-spacing: 3px;
-  padding: 25px;
+  padding: 2.5rem;
   width: 100vw;
   background: rgb(255 255 255 / 50%);
 }
 
 a {
-  margin-right: 25px;
+  margin-right: 2.5rem;
   color: var(--primary-color);
   text-decoration: none;
   border-bottom: 3px solid transparent;
@@ -109,34 +110,41 @@ a:focus {
 }
 
 .image-container {
+  flex: 1;
   border: 1px solid var(--secondary-color);
-  border-radius: 10px;
-  padding: 10px 20px;
-  margin-right: 25px;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin-right: 2.5rem;
   width: auto;
   background: var(--background);
   box-shadow: var(--box-shadow);
 }
 
+@media (max-width: 400px) {
+  .image-container {
+    display: block;
+  }
+}
+
 img {
-  height: 300px;
-  width: 300px;
+  height: 30rem;
+  width: 30rem;
 }
 
 /* Projects Section */
 .buttons {
-  margin-top: 15px;
-  margin-bottom: 50px;
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
 }
 
 button {
-  min-width: 100px;
-  height: 40px;
+  min-width: 10rem;
+  height: 4rem;
   cursor: pointer;
-  border-radius: 10px;
-  margin-right: 10px;
+  border-radius: 1rem;
+  margin-right: 1rem;
   border: 2px solid var(--primary-color);
-  font-size: 15px;
+  font-size: 1.5rem;
   outline: none;
 }
 
@@ -180,19 +188,19 @@ button:hover:not(.outline) {
   text-align: justify;
   background: rgb(0 0 0 / 50%);
   color: var(--on-primary);
-  border-radius: 10px;
-  padding: 30px;
+  border-radius: 1rem;
+  padding: 3rem;
 }
 
 p {
   margin: 0;
-  line-height: 25px;
+  line-height: 2.5rem;
 }
 
 /* Contact Section */
 .fab {
-  font-size: 100px;
-  margin-right: 50px;
+  font-size: 10rem;
+  margin-right: 5rem;
   cursor: pointer;
   color: var(--primary-color);
 }
@@ -207,13 +215,13 @@ p {
   align-items: center;
   z-index: 100;
   position: fixed;
-  right: 25px;
-  top: 30px;
+  right: 2.5rem;
+  top: 3rem;
 }
 
 .theme-switch-wrapper span {
-  margin-right: 10px;
-  font-size: 1rem;
+  margin-right: 1rem;
+  font-size: 1.6rem;
 }
 
 .toggle-text {
@@ -225,9 +233,9 @@ p {
 
 .theme-switch {
   display: inline-block;
-  height: 34px;
+  height: 3.4rem;
   position: relative;
-  width: 60px;
+  width: 6rem;
 }
 
 .theme-switch input {
@@ -249,11 +257,11 @@ p {
   background: #fff;
   bottom: 4px;
   content: '';
-  height: 26px;
+  height: 2.6rem;
   left: 4px;
   position: absolute;
   transition: 0.4s;
-  width: 26px;
+  width: 2.6rem;
 }
 
 input:checked + .slider {
@@ -265,7 +273,7 @@ input:checked + .slider::before {
 }
 
 .slider.round {
-  border-radius: 34px;
+  border-radius: 3.4rem;
 }
 
 .slider.round::before {
@@ -273,6 +281,6 @@ input:checked + .slider::before {
 }
 
 .fas {
-  font-size: 30px;
+  font-size: 3rem;
   margin-right: 5px;
 }
