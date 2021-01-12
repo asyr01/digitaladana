@@ -23,12 +23,19 @@
 
 <body>
     <!-- Navigation -->
-    <nav id="nav">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#contact">CONTACT</a>
-    </nav>
+    <div class="nav-container">
+        <div class="nav-toggle" id="navToggle">
+            <img id="navClosed" class="navIcon" src="./img/hamburger.svg" alt="hamburger menu">
+              <img id="navOpen" class="navIcon hidden" src="./img/close.svg" alt="close hamburger">
+        </div>
+        <nav id="nav">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </div>
+
 
     <!-- Home Section -->
     <section id="home">
