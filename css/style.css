@@ -316,6 +316,7 @@ input:checked + .slider::before {
 /* Media Queries */
 
 @media only screen and (max-width: 50em) {
+  /* Mobile display hamburger */
   .nav-container {
     flex-direction: column;
     align-items: flex-start;
@@ -339,5 +340,15 @@ input:checked + .slider::before {
 
   .nav-toggle {
     display: block;
+  }
+
+  /* Section About */
+  .about-container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .image-container {
+    margin-bottom: 2rem;
   }
 }
