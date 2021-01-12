@@ -1,13 +1,16 @@
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
 const nav = document.getElementById('nav');
 const toggleIcon = document.getElementById('toggle-icon');
+const navToggle = document.querySelector('#navToggle');
 const hamburger = document.getElementById('navClosed');
+const navIcon = document.querySelectorAll('.navIcon')
 const image1 = document.getElementById('image1');
 const image2 = document.getElementById('image2');
 const image3 = document.getElementById('image3');
 const textBox = document.getElementById('text-box');
 const DARK_THEME  = 'dark';
 const LIGHT_THEME = 'light';
+
 
 
 // Dark or Light Images
@@ -21,7 +24,7 @@ function imageMode(color) {
 function toggleDarkLightMode(isDark) {
    nav.style.backgroundColor = isDark ? 'rgb(0 0 0 / 50%)' :  'rgb(255 255 255 / 50%)' ;
    textBox.style.backgroundColor = isDark ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 50%)' ;
-   isDark ? hamburger.classList.add('filter-blue') : hamburger.classList.remove('filter-blue') 
+   navToggle.classList.toggle('filter-blue'); 
    toggleIcon.children[0].textContent = isDark ? 'Dark Mode' : 'Light Mode';
    isDark ? toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon') : 
    toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
@@ -43,7 +46,16 @@ function switchTheme(event){
     }
 }
 
-// Event Listener
+// Event Listeners
+
+// add nav toogle functionality
+navToggle.addEventListener("click", () => {
+  nav.classList.toggle('open');
+  navIcon.forEach(icon => {
+    icon.classList.toggle('hidden');
+  })
+})
+
 toggleSwitch.addEventListener('change', switchTheme);
 
 // Check Local Storage for theme
