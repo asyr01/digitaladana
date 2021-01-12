@@ -19,14 +19,16 @@ function imageMode(color) {
 
 
 function toggleDarkLightMode(isDark) {
-  nav.style.backgroundColor = isDark ? 'rgb(0 0 0 / 50%)' :  'rgb(255 255 255 / 50%)' ;
-  textBox.style.backgroundColor = isDark ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 50%)' ;
-  hamburger.classList.add = isDark ? 'filter-blue' : '';
-  toggleIcon.children[0].textContent = isDark ? 'Dark Mode' : 'Light Mode';
-  isDark ? toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon') : 
+   nav.style.backgroundColor = isDark ? 'rgb(0 0 0 / 50%)' :  'rgb(255 255 255 / 50%)' ;
+   textBox.style.backgroundColor = isDark ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 50%)' ;
+   isDark ? hamburger.classList.add('filter-blue') : hamburger.classList.remove('filter-blue') 
+   toggleIcon.children[0].textContent = isDark ? 'Dark Mode' : 'Light Mode';
+   isDark ? toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon') : 
    toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
-   isDark ? imageMode(DARK_THEME) : imageMode(LIGHT_THEME)
+   isDark ? imageMode(DARK_THEME) : imageMode(LIGHT_THEME);
 }
+
+
 
 // Swtich theme dynamically
 function switchTheme(event){
