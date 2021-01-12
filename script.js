@@ -11,8 +11,6 @@ const textBox = document.getElementById('text-box');
 const DARK_THEME  = 'dark';
 const LIGHT_THEME = 'light';
 
-
-
 // Dark or Light Images
 function imageMode(color) {
   image1.src = `img/undraw_feeling_proud_${color}.svg`
@@ -55,6 +53,14 @@ navToggle.addEventListener("click", () => {
     icon.classList.toggle('hidden');
   })
 })
+
+// close after clicked an anchor element, and change the icon.
+nav.addEventListener("click", () => {
+  nav.classList.toggle('open');
+  navIcon.forEach(icon => {
+    icon.classList.toggle('hidden');
+  })
+});
 
 toggleSwitch.addEventListener('change', switchTheme);
 
