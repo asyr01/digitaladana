@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa|Kaushan+Script|Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Bangers|Oswald|Goldman&display=swap');
 
 :root {
   --primary-color: rgb(255, 92, 92);
@@ -9,6 +9,7 @@
   --on-background-alt: rgba(66, 66, 66, 0.7);
   --background: rgb(255, 255, 255);
   --box-shadow: 0 5px 2rem 1px rgba(0, 0, 0, 0.5);
+  --writer-light: #f7ce00;
   font-size: 62.5%; /*1rem = 10px*/
 }
 
@@ -20,6 +21,7 @@
   --on-background: rgba(255, 255, 255, 0.9);
   --on-background-alt: rgba(255, 255, 255, 0.7);
   --background: #121212;
+  --writer-night: #16ffff;
 }
 
 .txt-type > .txt {
@@ -55,16 +57,21 @@ section {
 }
 
 h1 {
-  font-family: Kaushan Script, sans-serif;
+  font-family: Bangers, sans-serif;
   font-size: 10rem;
+  font-weight: 100;
   margin-bottom: 0;
+  color: var(--primary-color);
 }
 
 /* For the typing effect added by javascript */
 .writer {
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Goldman', cursive;
   font-size: 3.2rem;
-  color: #f00;
+}
+
+#text-writer {
+  color: var(--writer-light);
 }
 
 h2 {
@@ -356,5 +363,24 @@ input:checked + .slider::before {
     text-align: center;
     margin-bottom: 2rem;
     margin-right: 0;
+  }
+
+  /*Section Buttons  */
+
+  /* Section Contact*/
+  .social-icons {
+    display: flex;
+    font-size: 1rem;
+  }
+
+  .fab {
+    font-size: 6.5rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    margin: 0;
+  }
+
+  .fab:not(:last-child) {
+    margin-right: 1.3rem;
   }
 }

@@ -8,6 +8,7 @@ const image1 = document.getElementById('image1');
 const image2 = document.getElementById('image2');
 const image3 = document.getElementById('image3');
 const textBox = document.getElementById('text-box');
+const txtWriter = document.getElementById('text-writer');
 const DARK_THEME  = 'dark';
 const LIGHT_THEME = 'light';
 
@@ -24,6 +25,7 @@ function toggleDarkLightMode(isDark) {
    textBox.style.backgroundColor = isDark ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 50%)' ;
    navToggle.classList.toggle('filter-blue'); 
    toggleIcon.children[0].textContent = isDark ? 'Dark Mode' : 'Light Mode';
+   isDark ? txtWriter.style.color = "var(--writer-night)" : txtWriter.style.color = "var(--writer-light)";
    isDark ? toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon') : 
    toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
    isDark ? imageMode(DARK_THEME) : imageMode(LIGHT_THEME);
