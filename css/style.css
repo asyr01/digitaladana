@@ -10,7 +10,6 @@
   --background: rgb(255, 255, 255);
   --box-shadow: 0 5px 2rem 1px rgba(0, 0, 0, 0.5);
   --writer-light: #f7ce00;
-  font-size: 62.5%; /*1rem = 10px*/
 }
 
 [data-theme='dark'] {
@@ -31,6 +30,13 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-size: 62.5%; /*1rem = 10px*/
+}
+
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
