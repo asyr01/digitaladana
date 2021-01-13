@@ -56,10 +56,9 @@ navToggle.addEventListener("click", () => {
 
 // close after clicked an anchor element, and change the icon.
 nav.addEventListener("click", () => {
-  nav.classList.toggle('open');
-  navIcon.forEach(icon => {
-    icon.classList.toggle('hidden');
-  })
+  if(document.body.clientWidth < 800) {
+    nav.classList.toggle('open');
+  }
 });
 
 toggleSwitch.addEventListener('change', switchTheme);

@@ -334,7 +334,7 @@ input:checked + .slider::before {
   }
 
   nav > * {
-    transform: translateY(45px);
+    transform: translateY(245px);
     text-align: center;
   }
 
