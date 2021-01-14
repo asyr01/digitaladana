@@ -67,6 +67,10 @@ nav.addEventListener("click", () => {
   }
 });
 
+// Loading Spinner
+window.addEventListener('load', () => {
+  loader.parentElement.removeChild(loader);
+})
 
 toggleSwitch.addEventListener('change', switchTheme);
 
