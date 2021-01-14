@@ -1,4 +1,5 @@
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
+const home = document.getElementById('home');
 const nav = document.getElementById('nav');
 const toggleIcon = document.getElementById('toggle-icon');
 const navToggle = document.querySelector('#navToggle');
@@ -9,8 +10,26 @@ const image2 = document.getElementById('image2');
 const image3 = document.getElementById('image3');
 const textBox = document.getElementById('text-box');
 const txtWriter = document.getElementById('text-writer');
+const loader = document.getElementById('loader');
 const DARK_THEME  = 'dark';
 const LIGHT_THEME = 'light';
+
+
+
+// Loading Spinner
+ 
+function showLoadingSpinner() {
+  loader.hidden = false;
+  home.hidden = true;
+}
+
+function removeLoadingSpinner() {
+  if (!loader.hidden) {
+    home.hidden = false;
+    loader.hidden = true;
+  }
+}
+
 
 // Dark or Light Images
 function imageMode(color) {
