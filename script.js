@@ -1,5 +1,4 @@
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
-const homeContainer = document.getElementById('home-container');
 const nav = document.getElementById('nav');
 const toggleIcon = document.getElementById('toggle-icon');
 const navToggle = document.querySelector('#navToggle');
@@ -73,11 +72,6 @@ window.addEventListener('load', () => {
 })
 
 toggleSwitch.addEventListener('change', switchTheme);
-
-
-
-
-
 
 // Check Local Storage for theme
 const currentTheme = localStorage.getItem('theme');
