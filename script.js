@@ -1,5 +1,5 @@
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
-const home = document.getElementById('home');
+const homeContainer = document.getElementById('home-container');
 const nav = document.getElementById('nav');
 const toggleIcon = document.getElementById('toggle-icon');
 const navToggle = document.querySelector('#navToggle');
@@ -14,21 +14,6 @@ const loader = document.getElementById('loader');
 const DARK_THEME  = 'dark';
 const LIGHT_THEME = 'light';
 
-
-
-// Loading Spinner
- 
-function showLoadingSpinner() {
-  loader.hidden = false;
-  home.hidden = true;
-}
-
-function removeLoadingSpinner() {
-  if (!loader.hidden) {
-    home.hidden = false;
-    loader.hidden = true;
-  }
-}
 
 
 // Dark or Light Images
@@ -82,7 +67,13 @@ nav.addEventListener("click", () => {
   }
 });
 
+
 toggleSwitch.addEventListener('change', switchTheme);
+
+
+
+
+
 
 // Check Local Storage for theme
 const currentTheme = localStorage.getItem('theme');
