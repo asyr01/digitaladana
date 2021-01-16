@@ -162,6 +162,7 @@ a:focus {
 }
 
 .image-container {
+  margin: 0;
   border: 1px solid var(--secondary-color);
   border-radius: 1rem;
   padding: 1rem 2rem;
@@ -169,6 +170,12 @@ a:focus {
   width: auto;
   background: var(--background);
   box-shadow: var(--box-shadow);
+  max-width: 35rem;
+  text-align: center;
+}
+
+.image-container:not(:last-child) {
+  margin: 0px 2.5rem 0px 0px;
 }
 
 img {
