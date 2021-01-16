@@ -7,7 +7,6 @@ const navIcon = document.querySelectorAll('.navIcon')
 const image1 = document.getElementById('image1');
 const image2 = document.getElementById('image2');
 const image3 = document.getElementById('image3');
-const textBox = document.getElementById('text-box');
 const txtWriter = document.getElementById('text-writer');
 const loader = document.getElementById('loader');
 const DARK_THEME  = 'dark';
@@ -25,7 +24,6 @@ function imageMode(color) {
 
 function toggleDarkLightMode(isDark) {
    nav.style.backgroundColor = isDark ? 'rgb(0 0 0 / 50%)' :  'rgb(255 255 255 / 50%)' ;
-   textBox.style.backgroundColor = isDark ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 50%)' ;
    navToggle.classList.toggle('filter-blue'); 
    toggleIcon.children[0].textContent = isDark ? 'Dark Mode' : 'Light Mode';
    isDark ? txtWriter.style.color = "var(--writer-night)" : txtWriter.style.color = "var(--writer-light)";
