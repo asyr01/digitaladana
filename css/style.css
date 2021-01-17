@@ -385,6 +385,7 @@ input:checked + .slider::before {
     -ms-transform: translateY(245px);
     transform: translateY(245px);
     text-align: center;
+    pointer-events: all;
   }
   .nav-toggle {
     display: block;
