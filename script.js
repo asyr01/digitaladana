@@ -14,6 +14,16 @@ const LIGHT_THEME = 'light';
 
 
 
+/* For caching and serviceWorker
+ Make sure sw are supported */
+
+if('serviceWorker' in navigator) {
+  window.addEventListener('laod', () => {
+     navigator.serviceWorker
+      .register('')
+  })
+}
+
 // Dark or Light Images
 function imageMode(color) {
   image1.src = `img/undraw_feeling_proud_${color}.svg`
@@ -31,7 +41,6 @@ function toggleDarkLightMode(isDark) {
    toggleIcon.children[1].classList.replace('icon-moon-o', 'icon-sun-o');
    isDark ? imageMode(DARK_THEME) : imageMode(LIGHT_THEME);
 }
-
 
 
 // Swtich theme dynamically
