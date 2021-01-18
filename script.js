@@ -27,8 +27,8 @@ function toggleDarkLightMode(isDark) {
    navToggle.classList.toggle('filter-blue'); 
    toggleIcon.children[0].textContent = isDark ? 'Dark Mode' : 'Light Mode';
    isDark ? txtWriter.style.color = "var(--writer-night)" : txtWriter.style.color = "var(--writer-light)";
-   isDark ? toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon') : 
-   toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
+   isDark ? toggleIcon.children[1].classList.replace('icon-sun-o', 'icon-moon-o') : 
+   toggleIcon.children[1].classList.replace('icon-moon-o', 'icon-sun-o');
    isDark ? imageMode(DARK_THEME) : imageMode(LIGHT_THEME);
 }
 
