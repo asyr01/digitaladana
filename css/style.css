@@ -9,26 +9,12 @@
   --background: rgb(255, 255, 255);
   --box-shadow: 0 5px 2rem 1px rgba(0, 0, 0, 0.5);
   --writer-light: #f7ce00;
-  --color-primary: #55c57a;
-  --color-primary-light: #7ed56f;
-  --color-primary-dark: #28b485;
-  --color-secondary-light: #ffb900;
-  --color-secondary-dark: #ff7730;
-  --color-tertiary-light: #2998ff;
-  --color-tertiary-dark: #5643fa;
-  --color-grey-light-1: #f7f7f7;
-  --color-grey-light-2: #eee;
-  --color-grey-dark: #777;
-  --color-grey-dark-2: #999;
-  --color-grey-dark-3: #333;
   --color-white: #fff;
   --color-black: #000;
   --default-font-size: 2rem;
   --grid-width: 114rem;
-  --gutter-vertical: 8rem;
-  --gutter-vertical-small: 6rem;
-  --gutter-horizontal: 6rem;
 }
+
 [data-theme='dark'] {
   --primary-color: #9641ff;
   --primary-variant: #6c63ff;
@@ -39,6 +25,7 @@
   --background: #121212;
   --writer-night: #16ffff;
 }
+
 .txt-type > .txt {
   border-right: 0.2rem solid #777;
 }
@@ -61,7 +48,7 @@ body {
   margin: 0 auto;
 }
 .row:not(:last-child) {
-  margin-bottom: var(--gutter-vertical);
+  margin-bottom: 8rem;
 }
 section {
   min-height: 100vh;
